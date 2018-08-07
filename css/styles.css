@@ -28,6 +28,7 @@ li {
 a {
     color: orange;
     text-decoration: none;
+    /* padding-top: 4em; */ */
 }
 
 a:hover,
@@ -85,8 +86,8 @@ section {
 
 nav {
     width: 100%;
-    height: 200px;
-    /*background-color: #252831;*/
+    height: 250px;
+    background-color: #252831;
     text-align: center;
 }
 
@@ -95,17 +96,19 @@ nav h1 {
 }
 
 nav h1 a {
-    color: #11999e;
+    color: orange;
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 5px;
     text-transform: uppercase;
+    /* padding-top: 2em; */
 }
 
 h1 {
     /*font-family: 'Anton', sans-serif;*/
     /*font-family: 'Amatic SC', cursive;*/
     font-family: 'Patrick Hand SC', cursive;
+    padding-top: 2em;
 }
 
 #breadcrumb {
@@ -163,19 +166,19 @@ h1 {
 
 .filter-options {
     width: 100%;
-    height: 150px;
-    background-color: #3397DB;
+    height: 250px;
+    background-color: #f58500;
     align-items: center;
     text-align: center;
 }
 
 .filter-options h2 {
-    color: white;
+    color: #252831;
     font-size: 1rem;
     font-weight: normal;
     line-height: 1;
     margin: 0 20px;
-    padding: 2em;
+    padding: 3em;
     text-align: center;
     font-weight: 600;
 }
@@ -225,7 +228,7 @@ h1 {
 }
 
 #restaurants-list li h1 {
-    color: #f18200;
+    color: #f58500;
     font-family: Arial, sans-serif;
     font-size: 14pt;
     font-weight: 200;

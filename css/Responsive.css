@@ -1,9 +1,10 @@
 @media screen and (max-width: 450px) {
-    /* ====================== Navigation ====================== */
-    nav {
+    /* ====================== Restaurant Filtering ====================== */
+    .filter-options {
         width: 100%;
-        height: 300px;
-        /*background-color: #252831;*/
+        height: 250px;
+        background-color: #f58500;
+        align-items: center;
         text-align: center;
     }
 }
