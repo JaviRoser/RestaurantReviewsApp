@@ -1,37 +1,57 @@
 /**===================== Responsiveness ====================== */
 
 @media screen and (max-width: 463px) {
-  .container {
-    margin: 30px 5px 0;
-  }
-  #restaurants-list li {
-    width: calc(100% - 30px);
-  }
+    /*Nexus 5*/
+    /*Navigation*/
+    nav h1 a {
+        font-size: 1.5em;
+    }
+    /*  Restaurant Listing  */
+    .container {
+        margin: 30px 5px 0;
+    }
+    #restaurants-list li {
+        width: calc(100% - 30px);
+    }
+    /*  Restaurant.html */
+    #restaurant-container,
+    #reviews-container {
+        border-bottom: 1px solid #d9d9d9;
+        border-top: 1px solid #fff;
+        padding: 140px 40px 30px;
+        width: 100%;
+    }
+
+
+
+
+
+    
 }
 
 @media screen and (min-width: 464px) {
-  .container {
-    margin: 30px 15px 0px;
-  }
-  #restaurants-list li {
-    width: calc(50% - 30px);
-  }
+    .container {
+        margin: 30px 15px 0px;
+    }
+    #restaurants-list li {
+        width: calc(50% - 30px);
+    }
 }
 
 @media screen and (min-width: 780px) {
-  #restaurants-list li {
-    width: calc(33.3333% - 30px);
-  }
+    #restaurants-list li {
+        width: calc(33.3333% - 30px);
+    }
 }
 
 @media screen and (min-width: 1000px) {
-  #restaurants-list li {
-    width: calc(25% - 30px);
-  }
+    #restaurants-list li {
+        width: calc(25% - 30px);
+    }
 }
 
 @media screen and (min-width: 1400px) {
-  #restaurants-list li {
-    width: calc(20% - 30px);
-  }
+    #restaurants-list li {
+        width: calc(20% - 30px);
+    }
 }

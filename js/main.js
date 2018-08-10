@@ -194,7 +194,8 @@ createRestaurantHTML = (restaurant) => {
 
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
-    more.setAttribute("title", 'Go to restaurant details page');
+    more.setAttribute('title', 'Go to restaurant details page');
+
     more.href = DBHelper.urlForRestaurant(restaurant);
     li.append(more)
 
