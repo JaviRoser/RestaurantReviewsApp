@@ -1,9 +1,37 @@
-@media only screen and (min-width: 768px)  {
+/**===================== Responsiveness ====================== */
 
-.li{
-    display: flex;
-    flex-wrap: column-wrap;
+@media screen and (max-width: 463px) {
+  .container {
+    margin: 30px 5px 0;
+  }
+  #restaurants-list li {
+    width: calc(100% - 30px);
+  }
 }
 
+@media screen and (min-width: 464px) {
+  .container {
+    margin: 30px 15px 0px;
+  }
+  #restaurants-list li {
+    width: calc(50% - 30px);
+  }
+}
 
+@media screen and (min-width: 780px) {
+  #restaurants-list li {
+    width: calc(33.3333% - 30px);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #restaurants-list li {
+    width: calc(25% - 30px);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #restaurants-list li {
+    width: calc(20% - 30px);
+  }
 }
