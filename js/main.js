@@ -4,6 +4,20 @@ let restaurants,
 var newMap
 var markers = []
 
+/*Accesibility*/
+
+/*List the Headings for the screen reader*/
+
+// for (var i = 0, headings = $$('h1,h2,h3,h4,h5,h6');
+//      i < headings.length; i++) {
+//    console.log(headings[i].textContent.trim() + " " +  
+//                headings[i].tagName,
+//                headings[i]);
+// }
+
+
+
+
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
@@ -157,10 +171,12 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
     const li = document.createElement('li');
+    li.className="restaurant-card"
 
     const image = document.createElement('img');
     image.className = 'restaurant-img';
     image.src = DBHelper.imageUrlForRestaurant(restaurant);
+    
     li.append(image);
 
     const name = document.createElement('h1');
@@ -181,6 +197,8 @@ createRestaurantHTML = (restaurant) => {
     li.append(more)
 
     return li
+
+    //Remainder to myself :Put codeto add html tag to the imahes
 }
 
 /**
