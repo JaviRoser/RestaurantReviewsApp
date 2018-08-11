@@ -17,26 +17,26 @@
 <body>
     <header>
         <nav>
-            <h1><a href="/">Restaurant Reviews</a></h1>
+            <h1><a tabIndex='0'href="/">Restaurant Reviews</a></h1>
         </nav>
     </header>
     <main id="maincontent" role="main">
-        <section id="map-container">
-            <div id="map"></div>
+        <section id="map-container" aria-label="mapbox">
+            <div id="map" role="application"></div>
         </section>
         <section>
             <div class="filter-options">
                 <h2>Filter Results</h2>
-                <select id="neighborhoods-select" name="neighborhoods" role=”combobox” onchange="updateRestaurants()">
+                <select id="neighborhoods-select" name="neighborhoods" role="combobox" aria-label="Select Neighborhoods"onchange="updateRestaurants()">
                     <option value="all">All Neighborhoods</option>
                 </select>
-                <select id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+                <select id="cuisines-select" name="cuisines" role="combobox" aria-label="Select Cuisines" onchange="updateRestaurants()">
                     <option value="all">All Cuisines</option>
                 </select>
             </div>
         </section>
         <!---Restaurant List-->
-        <section class="container" role="">
+        <section class="container">
             <!-- <div > -->
             <div class="col">
                 <ul id="restaurants-list" role="group">
