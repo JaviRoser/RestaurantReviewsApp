@@ -139,11 +139,6 @@ h1 {
 }
 
 
-
-
-
-
-
 /*Restaurant Info*/
 
 
@@ -333,6 +328,8 @@ h1 {
     right: 0;
     top: 80px;
     width: 50%;
+     display: flex;
+    flex-wrap: wrap;
 }
 
 .inside #map {
