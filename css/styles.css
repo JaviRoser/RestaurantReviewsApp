@@ -286,7 +286,7 @@ h1 {
 }
 
 #restaurants-list li a {
-    background-color: orange;
+    background-color: #f58500;
     /*border-bottom: 3px solid #eee;*/
     color: white;
     display: inline-block;
@@ -328,8 +328,7 @@ h1 {
     right: 0;
     top: 80px;
     width: 50%;
-     display: flex;
-    flex-wrap: wrap;
+
 }
 
 .inside #map {
