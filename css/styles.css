@@ -2,9 +2,6 @@
 
 
 
-
-
-
 /* CSS Document */
 
 * {
@@ -39,7 +36,7 @@ ul {
 }
 
 a {
-    color: #6b3b04;
+    color: orange;
     text-decoration: none;
 }
 
@@ -132,7 +129,7 @@ h1 {
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
-    background-color: #eee;
+    background-color: #f4f4f4;
     font-size: 17px;
     margin: 0;
     width: calc(50% - 80px);
