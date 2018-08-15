@@ -2,6 +2,9 @@
 
 
 
+
+
+
 /* CSS Document */
 
 * {
@@ -32,7 +35,7 @@ ul,
 li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    color: #333;
+    color: #f18200;
 }
 
 ul {
@@ -82,7 +85,10 @@ section {
 #maincontent {
     background-color: #f3f3f3;
     min-height: 100%;
+    /*display: flex;*/
 }
+
+
 
 #footer {
     background-color: #444;
@@ -93,6 +99,9 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
+
+
+
 
 
 
@@ -115,17 +124,16 @@ nav h1 {
 
 nav h1 a {
     color: orange;
-    font-size: 2.5em;
-
+    /* font-size: 2.5em; */
     letter-spacing: 5px;
     text-transform: uppercase;
-    /* padding-top: 2em; */
+    padding-top: 2em;
 }
 
 h1 {
-    /*font-family: 'Anton', sans-serif;*/
-    /*font-family: 'Amatic SC', cursive;*/
-    font-family: 'Patrick Hand SC', cursive;
+    /* font-family: 'Anton', sans-serif; */
+    /* font-family: 'Amatic SC', cursive; */
+    /* font-family: 'Patrick Hand SC', cursive; */
     padding-top: 3em;
     font-weight: 900;
 }
@@ -137,8 +145,12 @@ h1 {
     font-size: 17px;
     margin: 0;
     font-weight: 500;
-    width: calc(50% - 80px);
+    width: 50%;
+    position: fixed;
 }
+
+
+
 
 
 /*Restaurant Info*/
@@ -152,6 +164,9 @@ h1 {
 
 
 
+
+
+
 /* Add a slash symbol (/) before/behind each list item */
 
 #breadcrumb li+li:before {
@@ -162,12 +177,18 @@ h1 {
 
 
 
+
+
+
 /* Add a color to all links inside the list */
 
 #breadcrumb li a {
     color: #0275d8;
     text-decoration: none;
 }
+
+
+
 
 
 
@@ -188,6 +209,9 @@ h1 {
 
 
 
+
+
+
 /* ====================== Map ====================== */
 
 #map {
@@ -195,6 +219,9 @@ h1 {
     width: 100%;
     background-color: #ccc;
 }
+
+
+
 
 
 /* ====================== Restaurant Filtering ====================== */
@@ -232,6 +259,9 @@ h1 {
 }
 
 
+
+
+
 /* ====================== Restaurant Listing ====================== */
 
 #restaurants-list {
@@ -262,7 +292,7 @@ h1 {
 
 
 #restaurants-list .restaurant-img {
-    /* background-color: #ccc; */
+    background-color: #ccc;
     display: block;
     margin: 0;
     max-width: 100%;
@@ -273,8 +303,8 @@ h1 {
 
 #restaurants-list li h1 {
     color: #f58500;
-    /*font-family: Arial, sans-serif; */
-    font-size: 14pt;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
     /*font-weight: 900;*/
     letter-spacing: 0;
     line-height: 1.3;
@@ -314,18 +344,11 @@ h1 {
 
 
 
+
+
+
 /* ====================== Restaurant Details ====================== */
-/*.inside{
-margin:auto;
-height: auto;
-width: auto;
-display: flex;
-flex-wrap: wrap;
-overflow-x: hidden;
-padding: 3px 3px;
 
-
-}*/
 .inside header {
     position: fixed;
     top: 0;
@@ -334,22 +357,22 @@ padding: 3px 3px;
 }
 
 .inside #map-container {
-     background: blue none repeat scroll 0 0; 
-    height: 87%;
-    /*width: 100%*/
+    background: blue none repeat scroll 0 0;
+    height: 97%;
+    width: 100%;
     position: fixed;
     right: 0;
-    top: 80px;
+    top: 250px;
     width: 50%;
-    /*margin:auto;*/
 }
 
 .inside #map {
     background-color: #ccc;
     height: 100%;
-    width: auto;
+    width: 100%;
     margin: auto;
 }
+
 .inside #footer {
     bottom: 0;
     position: absolute;
@@ -365,11 +388,11 @@ padding: 3px 3px;
     margin: 15px 0 30px;
     text-transform: uppercase;
     line-height: 1.1;
-     padding-top: 6em; 
+    padding-top: 6em;
 }
 
 #restaurant-img {
-    width: 90%;
+    width: 100%;
 }
 
 #restaurant-address {
@@ -387,16 +410,15 @@ padding: 3px 3px;
     padding: 2px 0;
     text-align: center;
     text-transform: uppercase;
-    width: 90%;
+    width: 100%;
 }
 
 #restaurant-container,
 #reviews-container {
     border-bottom: 1px solid #d9d9d9;
     border-top: 1px solid #fff;
-    padding: 90px 40px 30px;
-    width: 100%;
-    margin:auto;
+    padding: 140px 40px 30px;
+    width: 50%;
 }
 
 #reviews-container {
@@ -430,6 +452,12 @@ padding: 3px 3px;
 
 #reviews-list li p {
     margin: 0 0 10px;
+}
+
+/*Color of the rating*/
+#reviews-list li p:nth-child(3) {
+    color: #f18200;
+    font-weight: 700;
 }
 
 #restaurant-hours td {

@@ -6,26 +6,13 @@
     nav h1 a {
         font-size: 1.5em;
     }
-    /*  Restaurant Listing  */
     .container {
         margin: 30px 5px 0;
     }
     #restaurants-list li {
         width: calc(100% - 30px);
     }
-    /*  Restaurant.html */
-    #restaurant-container,
-    #reviews-container,#breadcrumb,
-    .inside #footer  {
-     
-        width: 100%;
-    }
 
-
-    .container {
-        display: flex;
-        flex: wrap;
-    }
 }
 
 @media screen and (min-width: 464px) {
@@ -36,6 +23,8 @@
         width: calc(50% - 30px);
     }
 }
+
+
 
 @media screen and (min-width: 780px) {
     #restaurants-list li {
@@ -53,4 +42,30 @@
     #restaurants-list li {
         width: calc(20% - 30px);
     }
+}
+
+
+
+/*Restaurant Reviews Mobile site*/
+@media screen and (max-width: 801px) {
+    .inside #map-container {
+        height:400px;
+        position: relative;
+        top: 300px;
+        width:100%;
+        /* margin: 30px 15px 0px; */
+    }
+    
+    #breadcrumb{
+        width: 100%;
+    }
+    /*  Restaurant Listing  */
+    
+    #restaurant-container,
+    #reviews-container,#breadcrumb,
+    .inside #footer  {
+     
+        width: 100%;
+    }
+    
 }
