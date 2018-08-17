@@ -9,6 +9,12 @@
     .container {
         margin: 30px 5px 0;
     }
+    /*Restaurant Filter option*/
+    .filter-options{
+
+        height: 200px;
+        flex-direction: column;
+    }
     #restaurants-list li {
         width: calc(100% - 30px);
     }
@@ -48,6 +54,7 @@
 /*Restaurant Reviews Mobile site*/
 
 @media screen and (max-width: 801px) {
+
     .inside #map-container {
         height: 400px;
         position: relative;
@@ -55,7 +62,10 @@
         width: 100%;
         /* margin: 30px 15px 0px; */
     }
-
+    
+    #reviews-container h2{
+        text-align: center;
+    }
     #breadcrumb {
         width: 100%;
     }
@@ -69,5 +79,6 @@
     }
     #restaurant-name {
         padding-top: 2em;
+        text-align: center;
     }
 }
