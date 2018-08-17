@@ -4,19 +4,6 @@ let restaurants,
 var newMap
 var markers = []
 
-/*Accesibility*/
-
-/*List the Headings for the screen reader*/
-
-// for (var i = 0, headings = $$('h1,h2,h3,h4,h5,h6');
-//      i < headings.length; i++) {
-//    console.log(headings[i].textContent.trim() + " " +  
-//                headings[i].tagName,
-//                headings[i]);
-// }
-
-
-
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
@@ -171,13 +158,12 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
     const li = document.createElement('li');
-    // li.className="restaurant-card"
 
     const image = document.createElement('img');
     image.className = 'restaurant-img';
     image.setAttribute("alt", restaurant.name + 'restaurant image');
-    image.src = DBHelper.imageUrlForRestaurant(restaurant);
 
+    image.src = DBHelper.imageUrlForRestaurant(restaurant);
     li.append(image);
 
     const name = document.createElement('h1');
@@ -195,6 +181,16 @@ createRestaurantHTML = (restaurant) => {
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
     more.setAttribute('title', 'Go to restaurant details page');
+    more.setAttribute('role', 'button');
+
+    // Try to add the attributes using objects
+    //buttonAttribute={
+    //         title:'Go to restaurant details page',
+    //     role:'button'
+
+    // }
+
+    //  // more.setAttribute(buttonAttribute.title,buttonAttribute.role);
 
     more.href = DBHelper.urlForRestaurant(restaurant);
     li.append(more)

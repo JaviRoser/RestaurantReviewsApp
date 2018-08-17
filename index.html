@@ -27,9 +27,11 @@
         <section>
             <div class="filter-options">
                 <h2>Filter</h2>
-                <select id="neighborhoods-select" name="neighborhoods" role="combobox" aria-label="Select Neighborhoods"onchange="updateRestaurants()">
+                <label>select a neighbord</label>
+                <select id="neighborhoods-select" name="neighborhoods" role="combobox" aria-label="Select Neighborhoods" onchange="updateRestaurants()">
                     <option value="all">All Neighborhoods</option>
                 </select>
+                <label>Select a cuisine</label>
                 <select id="cuisines-select" name="cuisines" role="combobox" aria-label="Select Cuisines" onchange="updateRestaurants()">
                     <option value="all">All Cuisines</option>
                 </select>
@@ -37,11 +39,8 @@
         </section>
         <!---Restaurant List-->
         <section class="container">
-            <!-- <div > -->
-            <!-- <div class="col"> -->
-                <ul id="restaurants-list" role="group">
-                    <!-- Shows Restaurant List -->
-            <!-- </div> -->
+            <ul id="restaurants-list" role="group">
+                <!-- Shows Restaurant List -->
             </ul>
         </section>
     </main>

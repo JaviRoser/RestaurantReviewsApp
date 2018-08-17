@@ -45,19 +45,16 @@
 
 
 
-
 /*Restaurant Reviews Mobile site*/
 
 @media screen and (max-width: 801px) {
     .inside #map-container {
         height: 400px;
         position: relative;
-        top: 170px;
+        top: 150px;
         width: 100%;
         /* margin: 30px 15px 0px; */
     }
-
-
 
     #breadcrumb {
         width: 100%;
@@ -71,6 +68,6 @@
         width: 100%;
     }
     #restaurant-name {
-padding-top: 2em;
-}
+        padding-top: 2em;
+    }
 }
