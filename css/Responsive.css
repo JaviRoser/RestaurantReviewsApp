@@ -1,31 +1,22 @@
-/**===================== Responsiveness ====================== */
+    /**===================== Responsiveness ====================== */
 
 @media screen and (max-width: 463px) {
-    /*Nexus 5*/
-    /*Navigation*/
+
     nav h1 a {
         font-size: 1em;
     }
-    .container {
-        margin: 30px 5px 0;
-    }
-    /*Restaurant Filter option*/
-    .filter-options{
 
+    /*Restaurant Filter option*/
+    .filter-options {
         height: 200px;
         flex-direction: column;
-    }
-    #restaurants-list li {
-        width: calc(100% - 30px);
     }
 }
 
 @media screen and (min-width: 464px) {
-    .container {
-        margin: 30px 15px 0px;
-    }
     #restaurants-list li {
-        width: calc(50% - 30px);
+        /*Shows one column*/
+        width: calc(50% - 40px);
     }
 }
 
@@ -33,7 +24,7 @@
 
 @media screen and (min-width: 780px) {
     #restaurants-list li {
-        width: calc(33.3333% - 30px);
+        width: calc(33.3% - 30px);
     }
 }
 
@@ -43,27 +34,20 @@
     }
 }
 
-@media screen and (min-width: 1400px) {
-    #restaurants-list li {
-        width: calc(20% - 30px);
-    }
-}
-
 
 
 /*Restaurant Reviews Mobile site*/
 
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 768px) {
 
     .inside #map-container {
-        height: 400px;
+        height: 350px;
         position: relative;
         top: 150px;
         width: 100%;
-        /* margin: 30px 15px 0px; */
     }
-    
-    #reviews-container h2{
+
+    #reviews-container h2 {
         text-align: center;
     }
     #breadcrumb {
