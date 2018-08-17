@@ -1,0 +1,24 @@
+{
+  "name": "restaurantreviewsapp",
+  "version": "1.0.0",
+  "description": "UdacityProject",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaviRoser/RestaurantReviewsApp.git"
+  },
+  "author": "Carlos Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaviRoser/RestaurantReviewsApp/issues"
+  },
+  "homepage": "https://github.com/JaviRoser/RestaurantReviewsApp#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-imagemin": "^4.1.0"
+  }
+}
