@@ -17,7 +17,7 @@
 2. Open the root folder in a terminal
  	-  **Check your python version:** python -V
 	-  **Start a local server:** python -m http-server
-  -  **On your browser:** type in localhost:8000
+  	-  **On your browser:** type in localhost:8000
   
 
 
