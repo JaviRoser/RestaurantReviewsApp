@@ -12,6 +12,7 @@ const urlsToCache = [
     'js/main.js',
     'js/restaurant_info.js',
     'js/swregistration.js',
+    'data/restaurants.json',
     // 'restaurant.json',
     // 'dist/img/1.jpg',
     // 'dist/img/2.jpg',
@@ -35,7 +36,9 @@ const urlsToCache = [
     'img/10.jpg'
 ];
 
-
+/*
+    
+*/
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches

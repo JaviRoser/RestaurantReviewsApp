@@ -33,7 +33,7 @@ ul,
 li {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    color: #f18200;
+    color: #222831;
 }
 
 ul {
@@ -175,8 +175,9 @@ h1 {
 /* Add a color to all links inside the list */
 
 #breadcrumb li a {
-    color: #0275d8;
+    color: #2969a0;
     text-decoration: none;
+    font-weight: 700;
 }
 
 
@@ -203,7 +204,9 @@ h1 {
     z-index: 1;
 }
 
-
+.leaflet-control-attribution{
+    visibility: hidden;
+}
 
 
 /* ====================== Restaurant Filtering ====================== */
@@ -292,7 +295,7 @@ h1 {
 }
 
 #restaurants-list li h1 {
-    color: #f18200;
+    color: #202020;
     font-family: Arial, sans-serif;
     font-size: 1em;
     /*font-weight: 900;*/
@@ -369,7 +372,7 @@ h1 {
 }
 
 #restaurant-name {
-    color: #f18200;
+    color: #202020;
     font-family: Arial, sans-serif;
     font-size: 1.5em;
     /* font-weight: 900; */
@@ -417,7 +420,7 @@ h1 {
 
 #reviews-container h2 {
     font-family: Arial, sans-serif;
-    color: #f58500;
+    color: #202020;
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: -1px;
@@ -455,7 +458,7 @@ h1 {
 /*Reviews Color rating*/
 /*Review Name*/
 #reviews-list li p:nth-child(1) {
-    color: #f18200;
+    color: #666;
     font-weight: 600;
     font-size: 1.5em;
 }
@@ -463,7 +466,7 @@ h1 {
 
 /*Rating*/
 #reviews-list li p:nth-child(3) {
-    color: #f18200;
+    color: #333;
     font-weight: 700;
 }
 

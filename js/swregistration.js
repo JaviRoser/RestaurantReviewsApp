@@ -6,6 +6,7 @@
 
 if ('serviceWorker' in navigator) {
     console.log('Service Worker registration in progres');
+    //Load the page
     window.addEventListener('load', () => {
         navigator.serviceWorker
             .register('sw.js', { scope: './' })
