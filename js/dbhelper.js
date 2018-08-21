@@ -8,11 +8,13 @@ class DBHelper {
      * Change this to restaurants.json file location on your server.
      */
     static get DATABASE_URL() {
-        return `data/restaurants.json`;
-        // const port = 8000 // Change this to your server port
-        // return `http://localhost:${port}/data/restaurants.json`;
+        /*Uncomment when using github site*/
+       
+        // return `data/restaurants.json`;
 
-        // return `http://javiroser.github.io/RestaurantReviewsApp/data/restaurants.json`;
+        /*Uncomment when using localhost to start the site*/
+        const port = 8000 // Change this to your server port
+        return `http://localhost:${port}/data/restaurants.json`;
     }
 
     /**
@@ -48,6 +50,7 @@ class DBHelper {
                     callback(null, restaurant);
                 } else { // Restaurant does not exist in the database
                     callback('Restaurant does not exist', null);
+                    
                 }
             }
         });
@@ -153,7 +156,7 @@ class DBHelper {
      * Restaurant image URL.
      */
     static imageUrlForRestaurant(restaurant) {
-      //To test on Github
+        //To test on Github
         return (`./img/${restaurant.photograph}`);
         //To test on Local Server
         // return (`/img/${restaurant.photograph}`);

@@ -72,6 +72,8 @@ fillCuisinesHTML = (cuisines = self.cuisines) => {
 /**
  * Initialize leaflet map, called from HTML.
  */
+
+// var api_key = process.env.mapApiKey;
 initMap = () => {
     self.newMap = L.map('map', {
         center: [40.722216, -73.987501],
@@ -79,6 +81,7 @@ initMap = () => {
         scrollWheelZoom: false
     });
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
+        // mapboxToken: api_key,
         mapboxToken: 'pk.eyJ1IjoiamF2aXJvc2VyIiwiYSI6ImNqa2ltbGlqdDE2Z3kzcHA5b3F0Z21yYzcifQ.ZEI9elOX17WrwqqIgl5X4g',
         maxZoom: 18,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
@@ -114,6 +117,8 @@ updateRestaurants = () => {
 
     const cuisine = cSelect[cIndex].value;
     const neighborhood = nSelect[nIndex].value;
+    console.log(cuisine);
+    console.log(neighborhood)
 
     DBHelper.fetchRestaurantByCuisineAndNeighborhood(cuisine, neighborhood, (error, restaurants) => {
         if (error) { // Got an error!
@@ -122,7 +127,11 @@ updateRestaurants = () => {
             resetRestaurants(restaurants);
             fillRestaurantsHTML();
         }
+
     })
+
+
+
 }
 
 /**
@@ -149,8 +158,21 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
     const ul = document.getElementById('restaurants-list');
     restaurants.forEach(restaurant => {
         ul.append(createRestaurantHTML(restaurant));
+
     });
+    console.log("The number of Restaurants is " + restaurants.length);
+     const PlaceNoFoundHtml = document.querySelector('.restaurantNoFound');
+    if (restaurants.length === 0) {
+        // console.log("no restaurants found")
+       
+        PlaceNoFoundHtml.innerHTML = "Not restaurant found at this place!";
+    }
+    else{
+        PlaceNoFoundHtml.innerHTML = "";
+    }
+
     addMarkersToMap();
+    // if()
 }
 
 /**
@@ -180,18 +202,9 @@ createRestaurantHTML = (restaurant) => {
 
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
+    /*Set the attributes to the view details button in the main page*/
     more.setAttribute('title', 'Go to restaurant details page');
     more.setAttribute('role', 'button');
-
-    // Try to add the attributes using objects
-    //buttonAttribute={
-    //         title:'Go to restaurant details page',
-    //     role:'button'
-
-    // }
-
-    //  // more.setAttribute(buttonAttribute.title,buttonAttribute.role);
-
     more.href = DBHelper.urlForRestaurant(restaurant);
     li.append(more)
 
@@ -207,6 +220,7 @@ addMarkersToMap = (restaurants = self.restaurants) => {
     restaurants.forEach(restaurant => {
         // Add marker to the map
         const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
+
         marker.on("click", onClick);
 
         function onClick() {

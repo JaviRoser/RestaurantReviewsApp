@@ -79,6 +79,8 @@ fetchRestaurantFromURL = (callback) => {
 
 /**
  * Create restaurant HTML and add it to the webpage
+ Add all the restaurant details: Address, Image, type of cuisine, 
+ and operating hours
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
   const name = document.getElementById('restaurant-name');
@@ -116,7 +118,8 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
     row.appendChild(day);
 
     const time = document.createElement('td');
-    time.innerHTML = operatingHours[key];
+    /*JavaScript code snippet adds a line break in the HTML*/
+    time.innerHTML = operatingHours[key].replace(/, */g, ',<br>');
     row.appendChild(time);
 
     hours.appendChild(row);

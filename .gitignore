@@ -46,3 +46,5 @@ Thumbs.db
 # Dependency directory
 node_modules
 
+#Files
+app-env

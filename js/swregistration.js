@@ -1,8 +1,5 @@
 // Service Worker Registration
 //  08/12/18
-//  to support offline experience
-
-// 
 
 if ('serviceWorker' in navigator) {
     console.log('Service Worker registration in progres');
