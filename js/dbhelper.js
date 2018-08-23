@@ -9,12 +9,12 @@ class DBHelper {
      */
     static get DATABASE_URL() {
         /*Uncomment when using github site*/
-       
-        // return `data/restaurants.json`;
+
+        return `data/restaurants.json`;
 
         /*Uncomment when using localhost to start the site*/
-        const port = 8000 // Change this to your server port
-        return `http://localhost:${port}/data/restaurants.json`;
+        // const port = 8000 // Change this to your server port
+        // return `http://localhost:${port}/data/restaurants.json`;
     }
 
     /**
@@ -50,7 +50,7 @@ class DBHelper {
                     callback(null, restaurant);
                 } else { // Restaurant does not exist in the database
                     callback('Restaurant does not exist', null);
-                    
+
                 }
             }
         });
