@@ -14,10 +14,12 @@
 	-  **Download a zip File:** https://github.com/JaviRoser/RestaurantReviewsApp/archive/master.zip
 	-  **Clone a repo:**  git clone https://github.com/JaviRoser/RestaurantReviewsApp.git
 
-2. Open the root folder in a terminal
+2. Open the root folder in a terminal, then
  	-  **Check your python version:** python -V
-	-  **Start a local server:** python -m http-server
+		In case you do not have python installed, Go to https://www.python.org/downloads/
+	-  **Start a local server:** To start a local server, type in **python -m http-server** in the terminal
   	-  **On your browser:** type in localhost:8000
+  
   
 
 
