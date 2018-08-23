@@ -161,13 +161,12 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 
     });
     console.log("The number of Restaurants is " + restaurants.length);
-     const PlaceNoFoundHtml = document.querySelector('.restaurantNoFound');
+    const PlaceNoFoundHtml = document.querySelector('.restaurantNoFound');
     if (restaurants.length === 0) {
         // console.log("no restaurants found")
-       
+
         PlaceNoFoundHtml.innerHTML = "Not restaurant found at this place!";
-    }
-    else{
+    } else {
         PlaceNoFoundHtml.innerHTML = "";
     }
 

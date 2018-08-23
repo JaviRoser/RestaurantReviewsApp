@@ -1,64 +1,85 @@
-    /**===================== Responsiveness ====================== */
+/*/*    /**===================== Responsiveness ====================== */
 
-    @media screen and (max-width: 463px) {
+@media screen and (max-width: 375px) and (min-width: 320px) {
+    #restaurant-hours td {
+        font-size: 0.77em;
+    }
+     .filter-options {
+        height: 350px;
+        flex-direction: column;
+    }
+}
 
-        nav h1 a {
-            font-size: 1em;
-        }
+@media screen and (max-width: 463px) and (min-width: 400px) {
 
-        /*Restaurant Filter option*/
-        .filter-options {
-            height: 350px;
-            flex-direction: column;
-        }
+    nav h1 a {
+        font-size: 1em;
     }
 
-    @media screen and (min-width: 464px) {
-        #restaurants-list li {
-            /*Shows one column*/
-            width: calc(50% - 40px);
-        }
+    /*Restaurant Filter option*/
+    .filter-options {
+        height: 350px;
+        flex-direction: column;
+    }
+    #restaurant-hours td {
+        font-size: 0.9em;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 464px) {
+    #restaurants-list li {
+        /*Shows one column*/
+        width: calc(50% - 40px);
+    }
+}
+
+
+
+@media screen and (min-width: 780px) {
+    #restaurants-list li {
+        width: calc(33.3% - 30px);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #restaurants-list li {
+        width: calc(25% - 30px);
+    }
+}
+
+
+
+
+
+
+
+/*Restaurant Reviews for Mobile view*/
+
+@media screen and (max-width: 768px) {
+
+    .inside #map-container {
+        height: 350px;
+        position: relative;
+        top: 50px;
+        width: 100%;
     }
 
-
-
-    @media screen and (min-width: 780px) {
-        #restaurants-list li {
-            width: calc(33.3% - 30px);
-        }
+    #reviews-container h2 {
+        text-align: center;
     }
-
-    @media screen and (min-width: 1000px) {
-        #restaurants-list li {
-            width: calc(25% - 30px);
-        }
+    #breadcrumb {
+        width: 100%;
     }
-    /*Restaurant Reviews for Mobile view*/
-
-    @media screen and (max-width: 768px) {
-
-        .inside #map-container {
-            height: 350px;
-            position: relative;
-            top: 50px;
-            width: 100%;
-        }
-
-        #reviews-container h2 {
-            text-align: center;
-        }
-        #breadcrumb {
-            width: 100%;
-        }
-        /*  Restaurant Listing  */
-        #restaurant-container,
-        #reviews-container,
-        #breadcrumb,
-        .inside #footer {
-            width: 100%;
-        }
-        #restaurant-name {
-            padding-top: 2em;
-            text-align: center;
-        }
+    /*  Restaurant Listing  */
+    #restaurant-container,
+    #reviews-container,
+    #breadcrumb,
+    .inside #footer {
+        width: 100%;
     }
+    #restaurant-name {
+        padding-top: 2em;
+        text-align: center;
+    }
+}
