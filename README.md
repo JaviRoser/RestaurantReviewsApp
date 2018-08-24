@@ -27,7 +27,16 @@
 
 **Test live site:** https://javiroser.github.io/RestaurantReviewsApp/
 
+## Reources
 
+**Accessibility:**
+
+	- W3C:(Aria) https://www.w3.org/TR/wai-aria-1.1/
+
+**Service worker:**
+
+	- Web Fundamentals:https://developers.google.com/web/fundamentals/primers/service-workers/
+	- MDN Web Docs:https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
 
 
