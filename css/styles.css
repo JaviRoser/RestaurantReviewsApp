@@ -8,6 +8,9 @@
 
 
 
+
+
+
 /* CSS Document */
 
 * {
@@ -114,6 +117,9 @@ label {
 
 
 
+
+
+
 /* ====================== Navigation ====================== */
 
 nav {
@@ -166,6 +172,9 @@ h1 {
 
 
 
+
+
+
 /*Restaurant Info*/
 
 
@@ -182,6 +191,9 @@ h1 {
 
 
 
+
+
+
 /* Add a slash symbol (/) before/behind each list item */
 
 #breadcrumb li+li:before {
@@ -189,6 +201,9 @@ h1 {
     color: black;
     content: "/\00a0";
 }
+
+
+
 
 
 
@@ -214,12 +229,18 @@ h1 {
 
 
 
+
+
+
 /* Add a color on mouse-over */
 
 #breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
+
+
+
 
 
 
@@ -250,6 +271,9 @@ h1 {
 
 
 
+
+
+
 /* ====================== Restaurant Filtering ====================== */
 
 .filter-options {
@@ -260,8 +284,8 @@ h1 {
     background-color: #f3f3f3;
     align-items: center;
     text-align: center;
-    /* align-content: space-between; */
-    justify-content: SPACE-EVENLY;
+    align-content: space-between;
+    justify-content: center;
     padding-top: 6em;
 }
 
@@ -287,19 +311,9 @@ h1 {
     padding: 0 10;
     width: 200px;
     text-align: center;
-    /* display: flex; */
+    /*display: flex; */
     flex: wrap;
-    /* flex-direction: column; */
-    /* justify-content: center; */
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -318,24 +332,26 @@ h1 {
 
 #restaurants-list li {
     background-color: #fff;
-    /* border: 2px solid #ccc; */
-    /* font-family: Arial, sans-serif; */
+    font-family: Arial, sans-serif;
     margin: 15px;
     min-height: 280px;
     padding: 0 30px 25px;
     text-align: left;
     width: 100%;
     border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #restaurants-list .restaurant-img {
-    /* background-color: #ccc; */
+    /*background-color: #ccc; */
     display: block;
     margin: 0;
     max-width: 100%;
-    min-height: 200px;
+    min-height: 100px;
     min-width: 100%;
-    padding-top: 3em;
 }
 
 #restaurants-list li h1 {
@@ -385,6 +401,9 @@ h1 {
     text-align: center;
     padding: 2em;
 }
+
+
+
 
 
 
@@ -514,6 +533,9 @@ h1 {
 
 
 
+
+
+
 /*Reviews Color rating
 /*Review Name*/
 
@@ -527,6 +549,7 @@ h1 {
     justify-content: space-between;
     /* padding: 3em 20px 20px; */
 }
+
 
 
 
@@ -555,6 +578,9 @@ h1 {
     height: 30px;
     padding: 0.35em 20px 20px;
 }
+
+
+
 
 
 
