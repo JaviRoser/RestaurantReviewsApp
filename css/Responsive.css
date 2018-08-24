@@ -1,105 +1,99 @@
  /**===================== Responsiveness ====================== */
 
-
-@media screen and (max-width: 320px) and (min-width: 220px) {
-    #restaurant-hours td {
-        font-size: 0.77em;
-    }
-    .filter-options {
-        height: 350px;
-        flex-direction: column;
-    }
-}
-
-
-@media screen and (max-width: 384px) and (min-width: 320px) {
-    #restaurant-hours td {
-        font-size: 0.78em;
-    }
-    .filter-options {
-        height: 350px;
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 463px) and (min-width: 400px) {
-
-    nav h1 a {
-        font-size: 1em;
-    }
-
-    /*Restaurant Filter option*/
-    .filter-options {
-        height: 350px;
-        flex-direction: column;
-    }
-    #restaurant-hours td {
-        font-size: 1em;
-        padding-bottom: 2em;
-    }
-}
-
-@media screen and (min-width: 464px) {
-
-    #restaurants-list li {
-        /*Shows one column*/
-        width: calc(50% - 40px);
-    }
-}
+ @media screen and (max-width: 320px) and (min-width: 220px) {
+     /*Main Page*/
+     .filter-options {
+         height: 350px;
+         flex-direction: column;
+     }
+     /*Restaurant Reiews page*/
+     #restaurant-hours td {
+         font-size: 0.87em;
+     }
+ }
 
 
-@media screen and (min-width: 780px) {
- /*   .filter-options {
+ @media screen and (max-width: 384px) and (min-width: 320px) {
+     /*Main Page*/
+     .filter-options {
+         height: 350px;
+         flex-direction: column;
+     }
+     /*Restaurant Page Reviews*/
+     #restaurant-hours td {
+         font-size: 0.9em;
+     }
+ }
+
+ @media screen and (max-width: 463px) and (min-width: 400px) {
+
+     nav h1 a {
+         font-size: 1em;
+     }
+
+     /*Restaurant Filter option*/
+     .filter-options {
+         height: 350px;
+         flex-direction: column;
+     }
+     #restaurant-hours td {
+         font-size: 1em;
+         padding-bottom: 2em;
+     }
+ }
+
+ @media screen and (min-width: 464px) {
+
+     #restaurants-list li {
+         /*Shows one column*/
+         width: calc(50% - 40px);
+     }
+ }
+
+
+ @media screen and (min-width: 780px) {
+     /*   .filter-options {
         height: 350px;
         flex-direction: column;
     }*/
-    #restaurants-list li {
-        width: calc(33.3% - 30px);
-    }
-}
+     #restaurants-list li {
+         width: calc(33.3% - 30px);
+     }
+ }
 
-@media screen and (min-width: 1000px) {
-    #restaurants-list li {
-        width: calc(25% - 30px);
-    }
-}
+ @media screen and (min-width: 1000px) {
+     #restaurants-list li {
+         width: calc(25% - 30px);
+     }
+ }
+ /*Restaurant Reviews for Mobile view*/
 
+ @media screen and (max-width: 768px) {
 
-
-
-
-
-
-
-
-/*Restaurant Reviews for Mobile view*/
-
-@media screen and (max-width: 768px) {
-
-    .inside #map-container {
-        height: 350px;
-        position: relative;
-        top: 50px;
-        width: 100%;
-    }
+     .inside #map-container {
+         height: 350px;
+         position: relative;
+         top: 50px;
+         width: 100%;
+     }
 
 
 
-    #reviews-container h2 {
-        text-align: center;
-    }
-    #breadcrumb {
-        width: 100%;
-    }
-    /*  Restaurant Listing  */
-    #restaurant-container,
-    #reviews-container,
-    #breadcrumb,
-    .inside #footer {
-        width: 100%;
-    }
-    #restaurant-name {
-        padding-top: 2em;
-        text-align: center;
-    }
-}
+     #reviews-container h2 {
+         text-align: center;
+     }
+     #breadcrumb {
+         width: 100%;
+     }
+     /*  Restaurant Listing  */
+     #restaurant-container,
+     #reviews-container,
+     #breadcrumb,
+     .inside #footer {
+         width: 100%;
+     }
+     #restaurant-name {
+         padding-top: 2em;
+         text-align: center;
+     }
+ }

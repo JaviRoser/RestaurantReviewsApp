@@ -163,16 +163,16 @@ createReviewHTML = (review) => {
     date.innerHTML = review.date;
     // li.appendChild(date);
 
-    const nameAndDate=document.createElement('div')
+    const nameAndDate = document.createElement('div')
     li.appendChild(nameAndDate);
     nameAndDate.appendChild(name);
     nameAndDate.appendChild(date);
-    nameAndDate.setAttribute("class","nameAndDate");
+    nameAndDate.setAttribute("class", "nameAndDate");
     // div.appendChild(date);
     const rating = document.createElement('p');
     rating.innerHTML = `Rating: ${review.rating}`;
     li.appendChild(rating);
-        rating.setAttribute("class","rating");
+    rating.setAttribute("class", "rating");
 
     const comments = document.createElement('p');
     comments.innerHTML = review.comments;

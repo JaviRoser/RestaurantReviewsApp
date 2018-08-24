@@ -1,16 +1,6 @@
 @charset "utf-8";
 
 
-
-
-
-
-
-
-
-
-
-
 /* CSS Document */
 
 * {
@@ -94,9 +84,8 @@ label {
 }
 
 #maincontent {
-    background-color: #f3f3f3;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     min-height: 100%;
-    /*display: flex;*/
 }
 
 
@@ -110,12 +99,6 @@ label {
     text-align: center;
     text-transform: uppercase;
 }
-
-
-
-
-
-
 
 
 
@@ -167,14 +150,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
 /*Restaurant Info*/
 
 
@@ -183,12 +158,6 @@ h1 {
 #breadcrumb li {
     display: inline;
 }
-
-
-
-
-
-
 
 
 
@@ -206,13 +175,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
 /* Add a color to all links inside the list */
 
 #breadcrumb li a {
@@ -223,28 +185,12 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
 /* Add a color on mouse-over */
 
 #breadcrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
 }
-
-
-
-
-
-
-
 
 
 
@@ -267,13 +213,6 @@ h1 {
 
 
 
-
-
-
-
-
-
-
 /* ====================== Restaurant Filtering ====================== */
 
 .filter-options {
@@ -281,7 +220,8 @@ h1 {
     flex: wrap;
     width: 100%;
     height: 290px;
-    background-color: #f3f3f3;
+    /*background-color: #f8f8f8;*/
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     align-items: center;
     text-align: center;
     align-content: space-between;
@@ -317,11 +257,11 @@ h1 {
 
 
 
-
 /* ====================== Restaurant Listing ====================== */
 
 #restaurants-list {
-    background-color: #f3f3f3;
+    /*background-color: #f8f8f8;*/
+    background-image: linear-gradient(45deg, #fdfbfb 0%, #ebedee 100%);
     list-style: outside none none;
     margin: 0;
     padding: 0;
@@ -355,7 +295,7 @@ h1 {
 }
 
 #restaurants-list li h1 {
-    color: #202020;
+    color: #903749;
     font-family: Arial, sans-serif;
     font-size: 1em;
     /*font-weight: 900;*/
@@ -372,7 +312,6 @@ h1 {
 
 #restaurants-list li a {
     background-color: #393e46;
-    /*border-bottom: 3px solid #eee;*/
     color: white;
     display: inline-block;
     font-size: 10pt;
@@ -400,14 +339,8 @@ h1 {
     font-size: 1.5em;
     text-align: center;
     padding: 2em;
+    background-image: linear-gradient(2deg, #fdfbfb 0%, #ebedee 100%);
 }
-
-
-
-
-
-
-
 
 
 
@@ -458,7 +391,6 @@ h1 {
 
 #restaurant-img {
     width: 100%;
-
     height: auto;
 }
 
@@ -482,16 +414,18 @@ h1 {
 
 #restaurant-container,
 #reviews-container {
-    border-bottom: 1px solid #d9d9d9;
-    border-top: 1px solid #fff;
+    /*border-bottom: 1px solid #d9d9d9;*/
+    background-image: linear-gradient(45deg, #fdfbfb 0%, #ebedee 100%);
+    /*border-top: 1px solid #fff;*/
     padding: 140px 40px 30px;
     width: 50%;
-    /* line-height: 4em; */
+    line-height: 4em;
 }
 
 #reviews-container {
     padding: 30px 40px 80px;
     /*background-color: #222831;*/
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 #reviews-container h2 {
@@ -521,6 +455,7 @@ h1 {
     -webkit-box-shadow: 0 25px 5px #777;
     -moz-box-shadow: 0 2px 5px #777;
     box-shadow: 0 2px 5px #777;
+    border-radius: 6px;
 }
 
 
@@ -530,31 +465,19 @@ h1 {
 }
 
 
-
-
-
-
-
-
-/*Reviews Color rating
-/*Review Name*/
+/*Review Header Name and Date*/
 
 #reviews-list .nameAndDate {
     font-weight: 400;
     background-color: #222831;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-flow=row wrap;
-    /* flex-direction: row; */
     justify-content: space-between;
-    /* padding: 3em 20px 20px; */
 }
 
 
 
-
-
-/*Add style to the list review header */
+/*Review header */
 
 #reviews-list .nameAndDate p {
     color: white;
@@ -578,6 +501,10 @@ h1 {
     height: 30px;
     padding: 0.35em 20px 20px;
 }
+
+
+
+
 
 
 
