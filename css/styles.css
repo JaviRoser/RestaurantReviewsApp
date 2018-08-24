@@ -261,7 +261,7 @@ h1 {
     align-items: center;
     text-align: center;
     /* align-content: space-between; */
-    justify-content: center;
+    justify-content: SPACE-EVENLY;
     padding-top: 6em;
 }
 
