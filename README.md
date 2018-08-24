@@ -20,8 +20,12 @@
 	-  **Start a local server:** To start a local server, type in **python -m http-server** in the terminal
   	-  **On your browser:** type in localhost:8000
   
-  
+ 
+## Website Layout
 
+![m1](https://user-images.githubusercontent.com/25829140/44590199-8e531300-a788-11e8-91db-2054c5448239.JPG)
+
+**Test live site:** https://javiroser.github.io/RestaurantReviewsApp/
 
 
 
