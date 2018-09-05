@@ -21,22 +21,22 @@
   	-  **On your browser:** type in localhost:8000
   
  
-## Website Layout
+## Mobile Website Layout
 
 ![m1](https://user-images.githubusercontent.com/25829140/44590199-8e531300-a788-11e8-91db-2054c5448239.JPG)
 
 **Test live site:** https://javiroser.github.io/RestaurantReviewsApp/
 
-## Reources
+## Resources
 
 **Accessibility:**
 
-	- W3C:(Aria) https://www.w3.org/TR/wai-aria-1.1/
+- W3C:(Aria) https://www.w3.org/TR/wai-aria-1.1/
 
 **Service worker:**
 
-	- Web Fundamentals:https://developers.google.com/web/fundamentals/primers/service-workers/
-	- MDN Web Docs:https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+- Web Fundamentals:https://developers.google.com/web/fundamentals/primers/service-workers/
+- MDN Web Docs:https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
 
 
 
