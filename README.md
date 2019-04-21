@@ -25,7 +25,7 @@
 
 ![m1](https://user-images.githubusercontent.com/25829140/44590199-8e531300-a788-11e8-91db-2054c5448239.JPG)
 
-**Test live site:** https://javiroser.github.io/RestaurantReviewsApp/
+**Test live site:** https://javiroser.github.io/Udacity-RestaurantReviews/
 
 ## Resources
 
